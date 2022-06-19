@@ -23,6 +23,7 @@ func main() {
 	signal.Notify(sign, syscall.SIGINT)
 	//Задаём количество воркеров в программе
 	var n int
+	fmt.Println("Введите количество воркеров:")
 	fmt.Scan(&n)
 	//Запускаем наших воркеров
 	for i := 1; i <= n; i++ {
